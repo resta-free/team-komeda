@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.c-breadcrumbs {
+
+}
+
+.c-breadcrumbs__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-breadcrumbs__item {
+  color: $white;
+  letter-spacing: rem(1);
+  font-family: $third-font-family;
+}
+
+.c-breadcrumbs__link {
+  
+}

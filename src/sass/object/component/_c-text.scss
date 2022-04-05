@@ -4,7 +4,7 @@
   color: $white;
   letter-spacing: rem(2);
   @include mq('md') {
-    line-height: (35 / 16);
+    line-height: 2.1875;
     letter-spacing: rem(0.5);
   }
 }
