@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.c-text {
+  color: $white;
+  letter-spacing: rem(2);
+  @include mq('md') {
+    line-height: (35 / 16);
+    letter-spacing: rem(0.5);
+  }
+}
