@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
-  <body>
-    <%- include('./common/_top-header') %>
-      <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-    <%- include('./common/_footer') %>
+<body>
 
-
-    <% for (var i=0; i < 4; i++) { %>
-      <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %>
-
-
-  </body>
+  <!-- コンポーネント確認 -->
+  <%- include('./component/_c-section-title',{japaneseTitle:'事業内容', position:'left', englishTitle:'Content'}) %>
+  <!-- コンポーネント確認_end --> 
+</body>
 </html>
