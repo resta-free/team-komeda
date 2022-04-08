@@ -1,7 +1,15 @@
 @use "global" as *;
 
 .c-btn {
-  padding: rem(10) rem(40);
-  background-color: black;
-  color: yellow;
+  display: inline-block;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  transition: ease .3s;
+}
+
+.c-btn--background-black {
+  max-width: rem(335);
+  width: 100%;
+  background-color: $gray;
+  height: 30px;
 }
