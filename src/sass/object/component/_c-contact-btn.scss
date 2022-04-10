@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.c-contact-btn {
+}
+
+.c-contact-btn__btn {
+  -webkit-appearance: none;
+  background-color: $white;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(50);
+  width: 100%;
+  @include mq('md') {
+    font-size: rem(16);
+    letter-spacing: 0.125em;
+    max-width: rem(360);
+    height: rem(60);
+  }
+}
+
+.c-contact-btn__btn:hover,
+.c-contact-btn__btn:focus {
+  outline: none;
+}
+
+.c-contact-btn__btn::-moz-foucus-inner {
+  border: none;
+  padding: 0;
+}
