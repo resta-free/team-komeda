@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.c-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(45);
+  height: rem(45);
+  background-color: $white;
+  position: fixed;
+  right: rem(21);
+  bottom: rem(41);
+  @include mq('md') {
+    right: rem(31);
+    bottom: rem(32);
+  }
+}
+
+.c-to-top__arrow {
+  display: block;
+  width: rem(20);
+  height: rem(20);
+  border-top: rem(2) solid #333;
+  border-left: rem(2) solid #333;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: rem(10);
+}
