@@ -1,0 +1,17 @@
+<div class="p-news-list">
+  <div class="p-news-list__meta">
+    <p class="p-news-list__date">
+      <time datetime="2020-07-20">2020.07.20</time>
+    </p>
+    <p class="p-news-list__category">お知らせ</p>
+  </div>
+  <h3 class="p-news-list__title">
+    <%# underlineの場合はhover時アンダーライン %>
+    <% if( hover == 'underline' ) { %>
+    <a href="<%= link %>" class="p-news-list__link p-news-list__link--underline"><%= text %></a>
+    <%# yellowの場合はhover時文字色が黄色 %>
+    <% } else if( hover == 'yellow') { %>
+    <a href="<%= link %>" class="p-news-list__link p-news-list__link--yellow"><%= text %></a>
+    <% } %>
+  </h3>
+</div>
