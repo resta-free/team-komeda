@@ -1,10 +1,10 @@
 @use 'global' as *;
 
 .c-logo {
-  width: rem(70);
-  @include mq('md') {
-    width: 100px;
-  }
+  // width: rem(70);
+  // @include mq('md') {
+  //   width: 100px;
+  // }
 }
 
 .c-logo__img {
