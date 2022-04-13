@@ -42,9 +42,11 @@ body {
 $black: #111;
 $white: #fff;
 $gray: #333;
-$yellow: #F9F871;
 $yellow: #FFEA2E;
 
+body {
+  background-color: $black;
+}
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
