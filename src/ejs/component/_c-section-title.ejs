@@ -1,5 +1,11 @@
 
 <div class="c-section-title">
   <h2 class="c-section-title__japanese"><%= japaneseTitle %></h2>
-  <p class="c-section-title__english c-section-title__english--<%= position %>"><%= englishTitle %></p>
+  <!-- 英語タイトルが左側のとき -->
+  <% if( position == 'left') { %>
+    <p class="c-section-title__english c-section-title__english--left"><%= englishTitle %></p>
+    <!-- 英語タイトルが右側のとき -->
+   <% } else if( position == 'right') { %>
+    <p class="c-section-title__english c-section-title__english--right"><%= englishTitle %></p>
+  <% } %>
 </div>
