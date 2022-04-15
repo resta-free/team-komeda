@@ -26,11 +26,13 @@
   color: rgba($color: #F9F871, $alpha: .27);
   position: absolute;
   top: -45px;
+  left: 50%;
   transform: translateX(-50%);
   @include mq('md') {
     font-size: rem(110);
     color: rgba($color: #F9F871, $alpha: .2);
     transform: none;
+    left: unset;
   }
 }
 
