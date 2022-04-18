@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.p-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-cards--col3 {
+  margin-top: rem(-24);
+}
+
+.p-cards--col3 > .p-card {
+  margin-top: rem(24);
+  width: 100%;
+  @include mq('md') {
+    width: 31.8181%;
+  }
+}
+
+.p-cards--col3 > .p-card:not(:nth-child(3n + 1)) {
+  margin-left: 2.2727%;
+}
