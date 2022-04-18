@@ -53,7 +53,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+    
 
-
-
+  const swiper__topWorks = new Swiper('.swiper__top-works', {
+    loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
 });
+
+
