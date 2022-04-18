@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.p-sp-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.p-sp-nav__items {
+  margin-top: rem(143);
+}
+
+.p-sp-nav__item a {
+  display: block;
+  text-align: center;
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+  color: $white;
+  padding: rem(16) 0;
+}
