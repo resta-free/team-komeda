@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.p-pc-nav {
+  height: inherit;
+}
+
+.p-pc-nav__items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: inherit;
+}
+
+.p-pc-nav__item {
+  height: inherit;
+}
+
+.p-pc-nav__item a {
+  display: flex;
+  align-items: center;
+  font-size: rem(16);
+  line-height: 2.1875;
+  letter-spacing: 0.125em;
+  color: $white;
+  padding: 0 rem(16);
+  height: inherit;
+}
+
+.p-pc-nav__item--bg-white {
+  margin-left: rem(16);
+}
+
+.p-pc-nav__item--bg-white a {
+  background-color: $white;
+  padding: 0 rem(32);
+  color: $gray;
+}
