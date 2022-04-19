@@ -32,6 +32,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  // スクロールでMV過ぎるとヘッダー背景色変更
+  $(function () {
+    $(window).on("scroll", function () {
+      const sliderHeight = $(".p-mv").height();
+      if (sliderHeight - 30 < $(this).scrollTop()) {
+        $(".js-header").addClass("headerColorScroll");
+      } else {
+        $(".js-header").removeClass("headerColorScroll");
+      }
+    });
+  });
+
+
   //ドロワーメニュー
   $('.js-hamburger').on('click', function () {
     if ($('.js-hamburger').hasClass('is-open')) {
