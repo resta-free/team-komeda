@@ -1,15 +1,19 @@
 @use "global" as *;
 
 .p-sp-nav {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
+  height: 100vh;
 }
 
 .p-sp-nav__items {
-  margin-top: rem(143);
+  padding-top: rem(143);
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .p-sp-nav__item a {

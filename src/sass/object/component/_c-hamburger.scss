@@ -5,7 +5,10 @@ $drawer-height: 2px; //ドロワー線の高さ
 $drawer-color: $white; //ドロワー線の色
 
 .c-hamburger{
+  position: relative;
   z-index:9999;
+  padding: 0;
+  top: rem(14);
 }
 
 .c-hamburger span {
