@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.p-top-mv {
+}
+
+.p-top-mv__slide-img {
+  position: relative;
+  height: 100vh;
+}
+
+.p-top-mv__slide-img::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba( 17, 17, 17, .2);
+}
+
+.p-top-mv__slide-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide-active.p-top-mv__slide-img img,
+.swiper-slide-duplicate-active.p-top-mv__slide-img img,
+.swiper-slide-prev.p-top-mv__slide-img img {
+  animation: zoomUp 10s linear 0s 1 normal both;  
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.p-top-mv__titleWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.p-top-mv__mein-title {
+  font-size: rem(28);
+  line-height: 1;
+  font-weight: $bold;
+  letter-spacing: 0.0179em;
+  color: $white;
+  @include mq('md') {
+    font-size: rem(50);
+    letter-spacing: 0.01em;
+  }
+}
+
+.p-top-mv__sub-title {
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  color: $white;
+  margin-top: rem(24);
+  @include mq('md') {
+    font-size: rem(25);
+    letter-spacing: 0.02em;
+  }
+}
