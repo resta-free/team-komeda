@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.p-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-pagination a.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(16);
+  line-height: 1;
+  letter-spacing: 0.03125em;
+  color: $white;
+  background-color: $black;
+  border: 1px solid $white;
+  text-align: center;
+  height: rem(24);
+  width: rem(24);
+}
+
+.p-pagination a.pager:nth-child(2) {
+  margin-left: rem(22);
+}
+
+.p-pagination a.pager:nth-child(n + 3) {
+  margin-left: rem(16);
+}
+
+.p-pagination a.prev,
+.p-pagination a.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(16);
+  line-height: 1;
+  letter-spacing: 0.03125em;
+  color: $white;
+  background-color: $black;
+  border: 1px solid $white;
+  text-align: center;
+  height: rem(24);
+  width: rem(71);
+  text-transform: uppercase;
+}
+
+.p-pagination a.next {
+  margin-left: rem(22);
+}
+
+/* ホバー時 & 現在のページ */
+.p-pagination a:hover,
+.p-pagination a.current {
+  color: $black;
+  background-color: $white;
+}
+
+.p-pagination a.current--bg-yellow {
+  color: $black;
+  background-color: $yellow;
+}
