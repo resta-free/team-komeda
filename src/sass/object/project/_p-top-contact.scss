@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-top-contact {
+  background-color: $gray;
+  padding: rem(67) 0 rem(64);
+  @include mq('md') {
+    padding: rem(148) 0 rem(149);
+  }
+}
+
+.p-top-contact__inner {
+}
+
+.p-top-contact__header {
+}
+
+.p-top-contact__textWrap {
+  margin-top: rem(20);
+  @include mq('md') {
+    text-align: center;
+    margin-top: rem(24);
+  }
+}
+
+.p-top-contact__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(61);
+  }
+}
