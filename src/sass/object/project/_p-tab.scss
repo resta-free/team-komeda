@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.p-tab__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: rem(-24);
+  margin-top: rem(-16);
+  @include mq('md') {
+    margin-left: rem(-40);
+    margin-top: rem(-24);
+  }
+}
+
+.p-tab__item {
+  margin-left: rem(24);
+  margin-top: rem(16);
+  @include mq('md') {
+    margin-left: rem(40);
+    margin-top: rem(24);
+  }
+}
+
+.p-tab__item a {
+  display: block;
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+.p-tab__item--current {
+  color: $black;
+  background-color: $white;
+  padding: rem(3) rem(8);
+  @include mq('md') {
+    padding: rem(3) rem(10);
+  }
+}
