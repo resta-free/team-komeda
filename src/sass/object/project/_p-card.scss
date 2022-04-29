@@ -3,6 +3,15 @@
 .p-card {
   display: block;
   cursor: pointer;
+  background-color: $white;
+  color: $gray;
+  transition: background-color .3s;
+}
+
+.p-card:hover {
+  background-color: $gray;
+  color: $white;
+  opacity: 1;
 }
 
 .p-card__imgWrap {
@@ -13,22 +22,18 @@
 
 .p-card__imgWrap img {
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  transform: translateY(-50%);
   object-fit: cover;
 }
 
 .p-card__body {
-  background-color: $white;
   padding: rem(4) rem(24) rem(16) rem(22);
   @include mq('md') {
     padding: rem(4) rem(24) rem(16);
   }
-}
-
-.p-card__titleWrap {
-
 }
 
 .p-card__title {
@@ -36,7 +41,6 @@
   font-weight: $medium;
   line-height: 1.9444;
   letter-spacing: 0.0555em;
-  color: $gray;
 }
 
 .p-card__textWrap {
@@ -47,7 +51,6 @@
   font-size: rem(14);
   line-height: 1.8571;
   letter-spacing: 0.07142em;
-  color: $gray;
 }
 
 .p-card__info {
@@ -61,6 +64,7 @@
   letter-spacing: 0.07142em;
   background-color: $yellow2;
   padding: rem(1) rem(3) rem(1) rem(5);
+  color: $black;
 }
 
 .p-card__date {

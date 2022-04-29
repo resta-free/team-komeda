@@ -44,7 +44,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-
   //ドロワーメニュー
   $('.js-hamburger').on('click', function () {
     if ($('.js-hamburger').hasClass('is-open')) {
