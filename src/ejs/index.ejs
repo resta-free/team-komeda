@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
-<body>
+<%- include('./common/_head',{pageTitle:'CodeUpsチーム開発:事業内容'}) %>
 
-  <!-- コンポーネント確認 -->
-  <div class="wrapper">
-    <%- include('./component/_c-logo') %> 
-    <%- include('./component/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %> 
-    <%- include('./component/_c-section-title',{japaneseTitle:'事業内容', position:'left', englishTitle:'Content'}) %>
-    <%- include('./component/_c-breadcrumbs',{pageTitle1:'ブログ記事一覧', pageTitle2:'ブログ記事詳細'}) %> 
+<body>
+  <header class="l-header">
+    <%- include('./common/_p-header') %>
+  </header>
+  <div class="l-mv">
+    <%- include('./project/_p-top-mv') %>
   </div>
-  <!-- コンポーネント確認_end --> 
+  <main>
+    <section class="l-content">
+      <%- include('./project/_p-top-content') %>
+    </section>
+    <section class="l-works">
+      <%- include('./project/_p-top-works') %>
+    </section>
+    <section class="l-overview">
+      <%- include('./project/_p-top-overview') %>
+    </section>
+    <section class="l-blog">
+      <%- include('./project/_p-top-blog') %>
+    </section>
+    <section class="l-contact" style="margin-top: 100px;">
+      <%- include('./project/_p-top-contact') %>
+    </section>
+  </main>
 </body>
+
 </html>

@@ -1,0 +1,40 @@
+<main class="p-content">
+  <div class="p-content__inner l-inner">
+    <div class="p-content__titleWrap">
+      <h2 class="p-content__title">企業理念</h2>
+    </div>
+    <div class="p-content__textWrap">
+      <p class="p-content__text">
+        説明が入ります。説明が入ります。説明が入ります。説明が入ります。
+        <span>説明が入ります。説明が入ります。説明が入ります。説明が入ります。</span>
+      </p>
+    </div>
+    <div class="p-content__mediaItems">
+      <% let ary = [
+      { num:"1",
+        title:'企業理念１',
+        text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'
+      },
+      { num:"2",
+        title:'企業理念２',
+        text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'
+      }, 
+      { num:"3",
+        title:'企業理念３',
+        text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'
+      }
+      ] %>
+      <% ary.forEach(function (value) { %>
+      <div id="a-content<%= value.num %>" class="p-content__mediaItem p-contentMedia">
+        <figure class="p-contentMedia__imgWrap">
+          <img src="./images/content/content__item-<%= value.num %>@2x.png" alt="企業理念画像<%= value.num %>">
+        </figure>
+        <div class="p-contentMedia__body">
+          <h3 class="p-contentMedia__title"><%= value.title %></h3>
+          <p class="p-contentMedia__text"><%= value.text %></p>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+</main>

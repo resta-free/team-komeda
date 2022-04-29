@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.p-top-blog__cards {
+  margin-top: rem(64);
+  @include mq('md') {
+    margin-top: rem(48);
+  }
+}
+
+.p-top-blog__button {
+  text-align: center;
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(48);
+  }
+}
