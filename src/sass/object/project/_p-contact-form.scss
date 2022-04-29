@@ -1,32 +1,34 @@
 @use "global" as *;
 
-.p-contact {
-}
-
-.p-contact__row {
+.p-contact-form {
   @include mq('md') {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     max-width: rem(819);
     margin-right: auto;
   }
 }
 
-.p-contact__row + .p-contact__row {
+.p-contact-form__row {
+  @include mq('md') {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.p-contact-form__row + .p-contact-form__row {
   margin-top: rem(32);
   @include mq('md') {
     margin-top: rem(45);
   }
 }
 
-.p-contact__head {
+.p-contact-form__head {
   @include mq('md') {
     text-align: right;
   }
 }
 
-.p-contact__heading {
+.p-contact-form__heading {
   font-size: rem(14);
   letter-spacing: 0.05em;
   line-height: 1.7142;
@@ -36,7 +38,7 @@
   }
 }
 
-.p-contact__text {
+.p-contact-form__text {
   display: block;
   width: 100%;
   margin-top: rem(16);
@@ -47,7 +49,7 @@
   }
 }
 
-.p-contact__text input {
+.p-contact-form__text input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -66,17 +68,17 @@
   background-color: $white;
 }
 
-.p-contact__text input:focus {
+.p-contact-form__text input:focus {
   border: 2px solid #F9F871;
   box-shadow: none;
   outline: none;
 }
 
-.p-contact__text input::placeholder {
+.p-contact-form__text input::placeholder {
   color: #979797;
 }
 
-.p-contact__text textarea {
+.p-contact-form__text textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -97,24 +99,25 @@
   background-color: $white;
 }
 
-.p-contact__text textarea:focus {
+.p-contact-form__text textarea:focus {
 border: 2px solid #F9F871;
 box-shadow: none;
 outline: none;
 }
 
-.p-contact__text textarea::placeholder {
+.p-contact-form__text textarea::placeholder {
   color: #979797;
 }
 
-.p-contact__button-wrap {
+.p-contact-form__button-wrap {
   margin-top: rem(48);
   @include mq('md') {
     margin-top: rem(56);
+    padding-right: rem(90);
   }
 }
 
-.p-contact__button-wrap button {
+.p-contact-form__button-wrap button {
   -webkit-appearance: none;
   background-color: $white;
   background-image: none;
@@ -125,7 +128,7 @@ outline: none;
   display: inline-block;
   font-size: rem(20);
   letter-spacing: 0.1em;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   padding: 0;
   text-decoration: none;
   display: flex;
@@ -141,12 +144,12 @@ outline: none;
   }
 }
 
-.p-contact__button-wrap button:hover,
-.p-contact__button-wrap button:focus {
+.p-contact-form__button-wrap button:hover,
+.p-contact-form__button-wrap button:focus {
   outline: none;
 }
 
-.p-contact__button-wrap button::-moz-foucus-inner {
+.p-contact-form__button-wrap button::-moz-foucus-inner {
   border: none;
   padding: 0;
 }
