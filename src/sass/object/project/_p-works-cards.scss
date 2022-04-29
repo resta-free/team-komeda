@@ -1,0 +1,41 @@
+@use 'global' as *;
+
+.p-works-cards {
+  margin: 0 auto;
+	max-width: rem(540); 
+	width: 100%;
+  @include mq('md') {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $l-inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.p-works-cards > .p-works-card {
+  @include mq('md') {
+    width: 47.727%;
+  }
+}
+
+.p-works-cards > .p-works-card:not(:first-child) {
+  margin-top: rem(46);
+  @include mq('md') {
+    margin-top: 0;
+  }
+}
+
+.p-works-cards > .p-works-card:nth-child(2n) {
+  @include mq('md') {
+    margin-left: 4.363%;
+  }
+}
+
+.p-works-cards > .p-works-card:nth-child(n+3) {
+  @include mq('md') {
+    margin-top: 10.3636%;
+  }
+}
+
+

@@ -1,0 +1,14 @@
+<div class="p-works-cards">
+  <% let ary = [
+  { category:"カテゴリ1", figcaption:"CodeUps株式会社", i:1},
+  { category:"カテゴリ2", figcaption:"CodeUps株式会社", i:2}, 
+  { category:"カテゴリ3", figcaption:"CodeUps株式会社", i:3}, 
+  { category:"カテゴリ4", figcaption:"CodeUps株式会社", i:4},
+  { category:"カテゴリ5", figcaption:"CodeUps株式会社", i:5},
+  { category:"カテゴリ6", figcaption:"CodeUps株式会社", i:6},
+  ] %>
+  <% ary.forEach(function (value) { %>
+    <%- include('../project/_p-works-card',{i:value.i, figcaption:value.figcaption, category:value.category}) %> 
+  <% }); %>
+</div>
+
