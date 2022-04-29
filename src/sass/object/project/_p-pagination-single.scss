@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.p-pagination-single {
+
+}
+
+.p-pagination-single__items {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: rem(309);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-pagination-single__item {
+  border: 1px solid $white;
+  width: rem(71);
+}
+
+.p-pagination-single__item--prev {
+  margin-right: auto;
+}
+.p-pagination-single__item--next {
+  margin-left: auto;
+}
+
+.p-pagination-single__link {
+  letter-spacing: rem(2);
+  color: $white;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+}
+
+.p-pagination-single__link:hover {
+  color: $gray;
+  background-color: $white;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+}
+
