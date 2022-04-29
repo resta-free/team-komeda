@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.p-works-comment__head {
+  position: relative;
+  z-index: 1;
+  margin-left: rem(24);
+}
+
+.p-works-comment__title {
+  display: inline-block;
+  font-size: rem(20);
+  letter-spacing: 0.02em;
+  font-weight: $regular;
+  padding: rem(8) rem(24);
+  border-radius: rem(32);
+  border: 1px solid $white;
+  background-color: $black;
+}
+
+.p-works-comment__body {
+  position: relative;
+  z-index: 0;
+  margin-top: rem(-23);
+  padding: rem(56) rem(10) rem(33);
+  border: 1px solid $white;
+}
+
+.p-works-comment__text {
+  font-size: rem(16);
+  letter-spacing: 0.025em;
+  line-height: 2.1875;
+}
