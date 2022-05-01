@@ -2,14 +2,10 @@
 
 .p-works-cards {
   margin: 0 auto;
-	max-width: rem(540); 
 	width: 100%;
   @include mq('md') {
     display: flex;
     flex-wrap: wrap;
-    max-width: $l-inner + strip-unit($padding-pc) * 2;
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
   }
 }
 
