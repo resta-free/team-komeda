@@ -16,8 +16,12 @@
 
 .p-card__imgWrap {
   position: relative;
+}
+
+.p-card__imgWrap::before {
+  content:"";
+  display: block;
   padding-top: 66.5671%;
-  overflow: hidden;
 }
 
 .p-card__imgWrap img {
