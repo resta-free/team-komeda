@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.p-works {
+
+}
+
+.p-works__inner {
+  margin: 0 auto;
+	max-width: rem(540); 
+	width: 100%;
+	height: inherit;
+	@include mq('md') {
+		max-width: $l-inner + strip-unit($padding-pc) * 2;
+		padding-right: $padding-pc;
+		padding-left: $padding-pc;
+	}
+}
+
+.p-works__tab {
+  padding-right: $padding-sp;
+	padding-left: $padding-sp;
+  @include mq('md') {
+    padding: 0;
+  }
+}
+
+.p-works__cards {
+  margin-top: rem(17);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+.p-works__pagination {
+  margin-top: rem(80);
+  padding-right: $padding-sp;
+	padding-left: $padding-sp;
+  @include mq('md') {
+    margin-top: rem(104);
+    padding: 0;
+  }
+}
+
