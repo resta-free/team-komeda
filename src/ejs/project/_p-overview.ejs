@@ -1,0 +1,25 @@
+<div class="p-overview">
+  <div class="p-overview__inner l-inner">
+    <dl class="p-overview__list">
+      <% let ary = [
+      { term:"会社名",description:"テキストが入ります"},
+      { term:"設立",description:"テキストが入ります"}, 
+      { term:"資本金",description:"テキストが入ります"}, 
+      { term:"売上高",description:"テキストが入ります"},
+      { term:"代表者",description:"テキストが入ります"},
+      { term:"従業員数",description:"テキストが入ります"},
+      { term:"事業内容",description:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"},
+      { term:"所在地",description:"東京駅"}
+      ] %>
+      <% ary.forEach(function (value) { %>
+      <div class="p-overview__row">
+        <dt class="p-overview__term"><%= value.term %></dt>
+        <dd class="p-overview__discription"><%= value.description %></dd>
+      </div>
+      <% }); %>
+    </dl>
+    <div class="p-overview__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479754723176!2d139.74323885118764!3d35.65858048010233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1651380185701!5m2!1sja!2sjp" width="375" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
