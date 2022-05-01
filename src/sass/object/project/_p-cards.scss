@@ -18,10 +18,11 @@
 }
 
 .p-cards--col3 > .p-card:not(:nth-child(3n + 1)) {
-  margin-left: 2.2727%;
-}
-
-// p-relation用に追記
-.p-cards--relation {
+  @include mq('md') {
+    margin-left: 2.2727%;
+  }
   
-}
+  // p-relation用に追記
+.p-cards--relation {
+
+　　　　}

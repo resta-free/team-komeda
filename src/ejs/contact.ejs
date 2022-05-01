@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head.ejs',{pageTitle:'CodeUpsチーム開発:お問い合わせ'}) %>
+
+<body>
+  <%- include('./common/_p-header') %>
+  <div class="l-lower-mv">
+    <%- include('./project/_p-lower-mv',{page:'contact',pageTitle:'お問い合わせ',alt:'お問い合わせ'}) %>
+  </div>
+  <div class="l-breadcrumbs">
+    <%- include('./component/_c-breadcrumbs.ejs',{pageTitle1:'トップ', pageTitle2:'お問い合わせ'}) %>
+  </div>
+  <div class="l-contact p-contact">
+    <div class="p-contact__inner l-inner">
+      <div class="p-contact__form">
+        <%- include('./project/_p-contact-form') %>
+      </div>
+    </div>
+  </div>
+  <%- include('./component/_c-to-top') %>
+  <%- include('./common/_p-footer') %>
+</body>
+
+</html>

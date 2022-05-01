@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.p-content {
+}
+
+.p-content__inner {
+}
+
+.p-content__titleWrap {
+}
+
+.p-content__title {
+  text-align: center;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  font-weight: $regular;
+  @include mq('md') {
+    font-size: rem(25);
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+  }
+}
+
+.p-content__textWrap {
+  margin-top: rem(24);
+  @include mq('md') {
+    text-align: center;
+  }
+}
+
+.p-content__text {
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+  font-weight: $regular;
+  @include mq('md') {
+    line-height: 2.1875;
+  }
+}
+
+.p-content__text span {
+  @include mq('md') {
+    display: inline-block;
+  }
+}
+
+.p-content__mediaItems {
+  margin-top: rem(80);
+  @include mq('md') {
+    margin-top: rem(150);
+  }
+}
+
+.p-content__mediaItem + .p-content__mediaItem {
+  margin-top: rem(48);
+  @include mq('md') {
+    margin-top: rem(104);
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head',{pageTitle:'CodeUpsチーム開発:企業概要'}) %>
+
+<body>
+  <%- include('./common/_p-header') %>
+  <div class="l-lower-mv">
+    <%- include('./project/_p-lower-mv',{page:'overview',pageTitle:'企業概要',alt:'企業概要'}) %>
+  </div>
+  <div class="l-breadcrumbs">
+    <%- include('./component/_c-breadcrumbs',{pageTitle1:'トップ', pageTitle2:'企業概要'}) %>
+  </div>
+  <main class="l-overview">
+    <%- include('./project/_p-overview') %>
+    <section class="l-top-contact">
+      <%- include('./project/_p-top-contact') %>
+    </section>
+  </main>
+  <%- include('./component/_c-to-top') %>
+  <%- include('./common/_p-footer') %>
+</body>
+
+</html>
