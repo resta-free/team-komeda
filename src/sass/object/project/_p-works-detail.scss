@@ -1,0 +1,164 @@
+@use 'global' as *;
+
+.p-works-detail {
+
+}
+
+.p-works-detail__inner {
+  margin: 0 auto;
+	width: 100%;
+	@include mq('md') {
+		max-width: rem(850);
+		padding-right: $padding-pc;
+		padding-left: $padding-pc;
+	}
+}
+
+.p-works-detail__single-head {
+
+}
+
+// .p-works-detail__gallery
+
+.p-works-detail__gallery {
+  margin-top: rem(16);
+  width: 100%;
+  max-width: rem(600);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq('md') {
+    max-width: rem(800);
+    margin-top: rem(32);
+  }
+}
+
+.p-works-detail__thumbnail-swiper {
+  margin-top: rem(32);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+.p-works-detail__thumbnail-swiper .swiper-slide {
+  position: relative;
+  padding-top: 43.467%;
+  overflow: hidden;
+  @include mq('md') {
+    padding-top: 11.625%;
+   
+  }
+}
+.p-works-detail__thumbnail-swiper .swiper-slide img {
+  position: absolute;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.p-works-detail__gallery .swiper-button-next, 
+.p-works-detail__gallery .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  top: 48%;
+  background-color: $black;
+  border-radius: 50%;
+  @include mq('md') {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.p-works-detail__gallery .swiper-button-prev {
+  @include mq('md') {
+    left: 13px;
+  }
+}
+
+.p-works-detail__gallery .swiper-button-next {
+  right: 13px;
+}
+
+.p-works-detail__gallery .swiper-button-prev::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid $yellow2;
+  border-left: 2px solid $yellow2;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  @include mq('md') {
+    border-bottom: 3px solid $yellow2;
+    border-left: 3px solid $yellow2;
+    width: 20px;
+    height: 20px;
+
+  }
+}
+
+.p-works-detail__gallery .swiper-button-next::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid $yellow2;
+  border-right: 2px solid $yellow2;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  @include mq('md') {
+    border-top: 3px solid $yellow2;
+    border-right: 3px solid $yellow2;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.p-works-detail__gallery .swiper-slide-prev,
+.p-works-detail__gallery .swiper-slide-next {
+  position: relative;
+}
+
+.p-works-detail__gallery .swiper-slide-prev::before,
+.p-works-detail__gallery .swiper-slide-next::before {
+  // @include mq('md') {
+  //   content: "";
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: rgba($color: #000000, $alpha: 0.2);
+  // }
+}
+
+// .p-works-detail__gallery終わり
+
+
+.p-works-detail__comment {
+  margin-top: rem(32);
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}
+
+.p-works-detail__comment-item {
+
+}
+
+.p-works-detail__comment-item:not(:first-child) {
+  margin-top: rem(32);
+  @include mq('md') {
+    margin-top: rem(48);
+  }
+}
+
+.p-works-detail__pagination-single {
+  margin-top: rem(80);
+  @include mq('md') {
+    margin-top: rem(104);
+  }
+}
