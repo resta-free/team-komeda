@@ -15,12 +15,6 @@
   }
 }
 
-.l-breadcrumbs--page-detail {
-  margin-top: rem(66); 
-  padding-left: rem(22);
-  padding-right: rem(26);
-  @include mq('md') {
-    padding: 0 rem(90);
-    max-width: 100%;
-  }
+.l-breadcrumbs--detail-page {
+  margin-top: rem(66);
 }

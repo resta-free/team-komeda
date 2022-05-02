@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head',{pageTitle:'CodeUpsチーム開発:制作実績'}) %>
+
+<body>
+  <header>
+    <%- include('./common/_p-header') %>
+  </header>
+  <div class="l-lower-mv">
+    <%- include('./project/_p-lower-mv',{page:'works',pageTitle:'制作実績',alt:'制作実績'}) %>
+  </div>
+  <div class="l-breadcrumbs">
+    <%- include('./component/_c-breadcrumbs',{pageTitle1:'制作実績', pageTitle2:''}) %>
+  </div>
+  <main>
+    <div class="l-lower-works">
+      <%- include('./project/_p-works') %>
+    </div>
+    <section class="l-top-contact">
+      <%- include('./project/_p-top-contact') %>
+    </section>
+  </main>
+  <%- include('./component/_c-to-top') %>
+  <%- include('./common/_p-footer') %>
+</body>
+
+</html>

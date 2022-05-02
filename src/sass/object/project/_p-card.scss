@@ -68,6 +68,7 @@
   letter-spacing: 0.07142em;
   background-color: $yellow2;
   padding: rem(1) rem(3) rem(1) rem(5);
+  color: $black;
 }
 
 .p-card__date {
@@ -75,4 +76,5 @@
   line-height: 1.8571;
   letter-spacing: 0.07142em;
   margin-left: auto;
+  color: $gray;
 }
