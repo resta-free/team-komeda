@@ -1,0 +1,33 @@
+@use 'global' as *;
+
+.p-news {
+  margin-top: rem(85);
+  @include mq('md') {
+    margin-top: rem(69);
+  }
+}
+
+.p-news__inner {
+  @include mq('md') {
+    max-width: rem(910);
+  }
+}
+
+.p-news__lists {
+
+}
+
+.p-news__list {
+
+}
+
+.p-news__list:not(:first-child) {
+  margin-top: rem(32);
+}
+
+.p-news__pagination {
+  margin-top: rem(120);
+  @include mq('md') {
+    margin-top: rem(104);
+  }
+}
