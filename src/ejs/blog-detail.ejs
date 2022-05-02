@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head',{pageTitle:'CodeUpsチーム開発:企業概要'}) %>
+
+<body>
+  <%- include('./common/_p-header') %>
+  <div class="l-breadcrumbs l-breadcrumbs--detail-page">
+    <%- include('./component/_c-breadcrumbs',{pageTitle1:'ブログ記事一覧', pageTitle2:'ブログ記事詳細'}) %>
+  </div>
+  <main class="l-blog-detail">
+    <%- include('./project/_p-blog-detail') %>
+    <div class="blog-detail__relation">
+      <%- include('./project/_p-relation', {path:'./images/blog/card__item-', alt:'ブログ記事の関連記事サムネイル'}) %>
+    </div>
+    <section class="l-top-contact">
+      <%- include('./project/_p-top-contact') %>
+    </section>
+  </main>
+  <%- include('./component/_c-to-top') %>
+  <%- include('./common/_p-footer') %>
+</body>
+
+</html>
