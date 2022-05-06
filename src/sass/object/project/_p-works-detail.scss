@@ -32,8 +32,37 @@
   }
 }
 
+.gallery-swiper {
+
+}
+
+.gallery-swiper__wrapper {
+
+}
+
+.gallery-swiper__slide {
+  position: relative;
+  padding-top: 66.9333%;
+  overflow: hidden;
+  @include mq('md') {
+    padding-top: 53.375%;
+   
+  }
+}
+
+.gallery-swiper__slide img {
+  position: absolute;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+}
+
 .p-works-detail__thumbnail-swiper {
-  margin-top: rem(32);
+  margin-top: rem(30);
   @include mq('md') {
     margin-top: rem(40);
   }
@@ -142,6 +171,7 @@
 	padding-left: $padding-sp;
   @include mq('md') {
     margin-top: rem(80);
+    padding: 0;
   }
 }
 
@@ -150,7 +180,7 @@
 }
 
 .p-works-detail__comment-item:not(:first-child) {
-  margin-top: rem(32);
+  margin-top: rem(25);
   @include mq('md') {
     margin-top: rem(48);
   }

@@ -35,7 +35,6 @@
 }
 
 .p-footer__nav {
-  margin-top: rem(10);
   @include mq('md') {
     margin-left: auto;
   }

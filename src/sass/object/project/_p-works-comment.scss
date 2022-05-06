@@ -23,6 +23,9 @@
   margin-top: rem(-23);
   padding: rem(56) rem(10) rem(33);
   border: 1px solid $white;
+  @include mq('md') {
+    padding-top: rem(38);
+  }
 }
 
 .p-works-comment__text {
