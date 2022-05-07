@@ -72,11 +72,19 @@
   position: relative;
   padding-top: 43.467%;
   overflow: hidden;
+  opacity: .5;
+  max-width: rem(163);
+  width: 100%;
   @include mq('md') {
     padding-top: 11.625%;
-   
+    max-width: rem(93);
   }
 }
+
+.p-works-detail__thumbnail-swiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+
 .p-works-detail__thumbnail-swiper .swiper-slide img {
   position: absolute;
   object-fit: cover;
