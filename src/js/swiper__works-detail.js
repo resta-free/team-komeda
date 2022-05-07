@@ -1,34 +1,40 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-  //メイン
-  var slider = new Swiper ('.gallery-swiper', {
-    slidesPerView: 1,
-    centeredSlides: true,
-    loop: true,
-    loopedSlides: 8, //スライドの枚数と同じ値を指定
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-  });
-
+  
 //サムネイル
 var thumbs = new Swiper ('.thumbnail-swiper', {
-  slidesPerView: 2.13,
-  loop: true,
-  slideToClickedSlide: true,
-  centeredSlides: true,
-  spaceBetween: 24,
   breakpoints: {
     768: {
-      loop: true,
-      slideToClickedSlide: true,
       slidesPerView: 8,
       spaceBetween: 8,
       centeredSlides: false,
-    },
-  }
+    }
+  },
+    slidesPerView: 2.13,
+    spaceBetween: 24,
+    centeredSlides: true,
+    loopedSlides: 8, 
+  // freeMode: true,
+  // watchSlidesVisibility: true,
+  // watchSlidesProgress: true,
+  loop: true,
+  slideToClickedSlide: true,
 });
 
+//メイン
+var slider = new Swiper ('.gallery-swiper', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 8, 
+  // thumbs: {
+  //   swiper: thumbs
+  // },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
 slider.controller.control = thumbs;
 thumbs.controller.control = slider;
+
 });
