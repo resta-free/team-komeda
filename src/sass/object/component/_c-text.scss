@@ -3,6 +3,7 @@
 .c-text {
   color: $white;
   letter-spacing: rem(2);
+  line-height: 1.4375;
   @include mq('md') {
     line-height: 2.1875;
     letter-spacing: rem(0.5);
