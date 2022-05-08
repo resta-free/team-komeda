@@ -5,7 +5,7 @@
   flex-direction: column;
   @include mq('md') {
     flex-direction: row;
-    column-gap: rem(40);
+    column-gap: rem(30);
   }
 }
 
@@ -29,7 +29,7 @@
 .p-contentMedia__imgWrap::before {
   content:"";
   display: block;
-  padding-top: 69.786%;
+  padding-top: 69%;
   @include mq('md') {
     padding-top: 66.727%;
   }
@@ -47,8 +47,9 @@
 }
 
 .p-contentMedia__body {
-  padding-top: rem(24);
+  padding-top: rem(25);
   @include mq('md') {
+    padding-top: rem(10);
     flex: 1;
   }
 }
@@ -68,11 +69,12 @@
 .p-contentMedia__text {
   font-size: rem(16);
   letter-spacing: 0.125em;
-  margin-top: rem(24);
+  line-height: 1.4375;
+  margin-top: rem(22);
   font-weight: $regular;
   @include mq('md') {
     letter-spacing: 0.03125em;
     line-height: 2.1875;
-    margin-top: rem(40);
+    margin-top: rem(28);
   }
 }
