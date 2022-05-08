@@ -2,6 +2,7 @@
 
 .p-card {
   display: block;
+  position: relative;
   cursor: pointer;
   background-color: $white;
   color: $gray;
@@ -12,6 +13,25 @@
   background-color: $gray;
   color: $white;
   opacity: 1;
+}
+
+.p-card__new-label {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0.125em;
+  color: $gray;
+  width: rem(60);
+  height: rem(60);
+  background-color: #FFBA6A;
+  border-radius: 50%;
 }
 
 .p-card__imgWrap {
@@ -36,7 +56,7 @@
 .p-card__body {
   padding: rem(4) rem(24) rem(16) rem(22);
   @include mq('md') {
-    padding: rem(4) rem(24) rem(16);
+    padding: rem(4) rem(23) rem(16);
   }
 }
 
@@ -49,6 +69,9 @@
 
 .p-card__textWrap {
   margin-top: rem(4);
+  @include mq('md') {
+    margin-top: rem(7);
+  }
 }
 
 .p-card__text {
@@ -59,15 +82,18 @@
 
 .p-card__info {
   display: flex;
-  margin-top: rem(3);
+  margin-top: rem(5);
+  @include mq('md') {
+    margin-top: rem(10);
+  }
 }
 
 .p-card__category {
   font-size: rem(14);
-  line-height: 1.8571;
+  line-height: 1;
   letter-spacing: 0.07142em;
   background-color: $yellow2;
-  padding: rem(1) rem(3) rem(1) rem(5);
+  padding: rem(5);
   color: $black;
 }
 

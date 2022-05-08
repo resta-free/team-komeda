@@ -1,4 +1,7 @@
 <a href="#" class="p-card">
+  <% if( num == 0) { %>
+  <div class="p-card__new-label">New</div>
+  <% } %>
   <figure class="p-card__imgWrap">
     <img src="<%= path %><%= num + 1 %>@2x.png" alt="<%= alt %><%= num + 1 %>">
   </figure>
