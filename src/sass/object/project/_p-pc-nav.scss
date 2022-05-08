@@ -18,20 +18,52 @@
 .p-pc-nav__item a {
   display: flex;
   align-items: center;
+  position: relative;
   font-size: rem(16);
   line-height: 2.1875;
   letter-spacing: 0.125em;
   color: $white;
-  padding: 0 rem(16);
+  padding: 0 rem(15);
   height: inherit;
+  transition: ease .3s;
 }
 
 .p-pc-nav__item--bg-white {
-  margin-left: rem(16);
+  margin-left: rem(15);
 }
 
 .p-pc-nav__item--bg-white a {
   background-color: $white;
-  padding: 0 rem(32);
+  padding: 0 rem(31);
   color: $gray;
+}
+
+.p-pc-nav__item--bg-white a:hover {
+  background-color: $gray;
+  color: $white;
+}
+
+.p-pc-nav__item a::after {
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+  content: "";
+  width: 70%;
+  height: 1px;
+  background: $yellow;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+
+.p-pc-nav__item a:hover {
+  opacity: 1;
+}
+
+.p-pc-nav__item a:hover::after {
+  transform: scale(1, 1);
+}
+
+.p-pc-nav__item--bg-white a::after {
+  content: unset;
 }

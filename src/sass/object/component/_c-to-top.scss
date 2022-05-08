@@ -10,19 +10,31 @@
   position: fixed;
   right: rem(21);
   bottom: rem(41);
+  z-index: 999;
+  transition: ease .3s;
   @include mq('md') {
     right: rem(31);
     bottom: rem(32);
   }
 }
 
+.c-to-top:hover {
+  background-color: $gray;
+}
+
 .c-to-top__arrow {
   display: block;
   width: rem(20);
   height: rem(20);
-  border-top: rem(2) solid #333;
-  border-left: rem(2) solid #333;
+  border-top: rem(2) solid $gray;
+  border-left: rem(2) solid $gray;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-top: rem(10);
+  transition: ease .3s;
+}
+
+.c-to-top__arrow:hover {
+  border-top: rem(2) solid $white;
+  border-left: rem(2) solid $white;
 }

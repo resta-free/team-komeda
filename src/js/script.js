@@ -23,19 +23,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  // ヘッダー
-  $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
-    } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
-    }
-  });
-
   // スクロールでMV過ぎるとヘッダー背景色変更
   $(function () {
     $(window).on("scroll", function () {
-      const sliderHeight = $(".p-mv").height();
+      const sliderHeight = $(".p-top-mv").height();
       if (sliderHeight - 30 < $(this).scrollTop()) {
         $(".js-header").addClass("headerColorScroll");
       } else {

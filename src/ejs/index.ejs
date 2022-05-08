@@ -9,26 +9,26 @@
   <div class="l-mv">
     <%- include('./project/_p-top-mv') %>
   </div>
-  <main>
-    <section class="l-top-news">
-      <%- include('./project/_p-top-news') %>
-    </section>
-    <section class="l-content">
-      <%- include('./project/_p-top-content') %>
-    </section>
-    <section class="l-works">
-      <%- include('./project/_p-top-works') %>
-    </section>
-    <section class="l-overview">
-      <%- include('./project/_p-top-overview') %>
-    </section>
-    <section class="l-blog">
-      <%- include('./project/_p-top-blog') %>
-    </section>
-    <section class="l-contact" style="margin-top: 100px;">
-      <%- include('./project/_p-top-contact', {modifier:''}) %>
-    </section>
-  </main>
+  <div class="l-top-news">
+    <%- include('./project/_p-top-news') %>
+  </div>
+  <section class="l-top-content">
+    <%- include('./project/_p-top-content') %>
+  </section>
+  <section class="l-top-works">
+    <%- include('./project/_p-top-works') %>
+  </section>
+  <section class="l-top-overview">
+    <%- include('./project/_p-top-overview') %>
+  </section>
+  <section class="l-top-blog">
+    <%- include('./project/_p-top-blog') %>
+  </section>
+  <section class="l-top-contact">
+    <%- include('./project/_p-top-contact') %>
+  </section>
+  <%- include('./common/_p-footer') %>
+  <%- include('./component/_c-to-top') %>
 </body>
 
 </html>

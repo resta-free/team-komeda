@@ -25,7 +25,7 @@
   font-size: rem(50);
   color: rgba($color: #F9F871, $alpha: .27);
   position: absolute;
-  top: -45px;
+  top: -50px;
   left: 50%;
   transform: translateX(-50%);
   @include mq('md') {
@@ -33,6 +33,7 @@
     color: rgba($color: #F9F871, $alpha: .2);
     transform: none;
     left: unset;
+    top: -50px;
   }
 }
 

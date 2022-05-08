@@ -1,21 +1,19 @@
 @use 'global' as *;
 
 .p-footer {
-  padding: rem(45) 0 rem(52);
+  padding: rem(50) 0 rem(52);
   @include mq('md') {
-    padding: rem(32) 0 rem(35);
+    padding: rem(30) 0 rem(35);
   }
 }
 
 .p-footer__inner {
   margin: 0 auto;
 	width: 100%;
-	padding-right: $padding-sp;
-	padding-left: $padding-sp;
 	@include mq(md) {
-		max-width: rem(1266);
-		padding-right: $padding-pc;
-		padding-left: $padding-pc;
+		max-width: rem(1280);
+		padding-right: rem(16);
+		padding-left: rem(32);
 	}
 }
 
@@ -35,7 +33,9 @@
 }
 
 .p-footer__nav {
+  margin-top: rem(2);
   @include mq('md') {
+    margin-top: 0;
     margin-left: auto;
   }
 }
@@ -48,25 +48,21 @@
 }
 
 .p-footer__nav-item {
-
-}
-
-.p-footer__nav-item:not(:first-child) {
-  margin-top: rem(8);
-  @include mq('md') {
-    margin-top: 0;
-    margin-left: rem(32);
-  }
 }
 
 .p-footer__nav-link {
+  display: block;
+  position: relative;
+  font-size: rem(16);
   color: $white;
   letter-spacing: rem(1.2);
-  display: block;
+  line-height: 1.4375;
   text-align: center;
-  position: relative;
+  padding: rem(4) 0;
   @include mq('md') {
+    line-height: 2.1875;
     letter-spacing: rem(2);
+    padding: 0 rem(16);
   }
 }
 
@@ -100,7 +96,8 @@
   text-align: center;
   @include mq('md') {
     font-size: rem(15);
-    margin-top: rem(65);
+    margin-top: rem(70);
+    padding-right: rem(16);
   }
 }
 
