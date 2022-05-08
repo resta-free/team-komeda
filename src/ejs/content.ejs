@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head.ejs',{pageTitle:'CodeUpsチーム開発:事業内容'}) %>
+<%- include('./common/_head',{pageTitle:'CodeUpsチーム開発:事業内容'}) %>
 
 <body>
   <%- include('./common/_p-header') %>
@@ -8,7 +8,7 @@
     <%- include('./project/_p-lower-mv',{page:'content',pageTitle:'事業内容',alt:'事業内容'}) %>
   </div>
   <div class="l-breadcrumbs">
-    <%- include('./component/_c-breadcrumbs.ejs',{pageTitle1:'トップ', pageTitle2:'事業内容'}) %>
+    <%- include('./component/_c-breadcrumbs',{pageTitle1:'事業内容', pageTitle2:""}) %>
   </div>
   <div class="l-content">
     <%- include('./project/_p-content') %>

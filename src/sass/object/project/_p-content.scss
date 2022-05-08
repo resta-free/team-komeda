@@ -22,8 +22,9 @@
 }
 
 .p-content__textWrap {
-  margin-top: rem(24);
+  margin-top: rem(20);
   @include mq('md') {
+    margin-top: rem(24);
     text-align: center;
   }
 }
@@ -44,14 +45,14 @@
 }
 
 .p-content__mediaItems {
-  margin-top: rem(80);
+  margin-top: rem(88);
   @include mq('md') {
     margin-top: rem(150);
   }
 }
 
 .p-content__mediaItem + .p-content__mediaItem {
-  margin-top: rem(48);
+  margin-top: rem(54);
   @include mq('md') {
     margin-top: rem(104);
   }
