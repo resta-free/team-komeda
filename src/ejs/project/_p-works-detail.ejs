@@ -6,9 +6,9 @@
     <div class="p-works-detail__gallery">
       <div class="p-works-detail__gallery-swiper swiper gallery-swiper">
         <!-- メイン -->
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper gallery-swiper__wrapper">
           <% for (var i=0; i < 8; i++) { %>
-            <div class="swiper-slide">
+            <div class="swiper-slide gallery-swiper__slide">
               <img src="./images/works/works__item-<%= i + 1 %>@2x.png" alt="制作実績の画像">
             </div>
           <% } %>

@@ -55,6 +55,7 @@
 .p-pagination a.current {
   color: $black;
   background-color: $white;
+  opacity: 1;
 }
 
 .p-pagination a.current--bg-yellow {

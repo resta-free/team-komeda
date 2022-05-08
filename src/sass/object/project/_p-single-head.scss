@@ -4,6 +4,19 @@
 
 }
 
+.p-single-head__inner {
+  margin: 0 auto;
+	max-width: rem(600);
+	width: 100%;
+	height: inherit;
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
+	@include mq(md) {
+		max-width: $l-inner + strip-unit($padding-pc) * 2;
+		padding: 0;
+	}
+}
+
 .p-single-head__heading {
 
 }
@@ -27,7 +40,7 @@
   align-items: center;
   color: $white;
   @include mq('md') {
-    margin-top: rem(32);
+    margin-top: rem(26);
   }
 }
 

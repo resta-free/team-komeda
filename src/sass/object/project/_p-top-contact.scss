@@ -14,6 +14,20 @@
 .p-top-contact__header {
 }
 
+.p-top-contact__header .c-section-title .c-section-title__english {
+  @include mq('md') {
+    top: -92px;
+  }
+}
+
+.p-top-contact__header--lower .c-section-title .c-section-title__japanese {
+  font-size: rem(25);
+  @include mq('md') {
+    font-size: rem(30);
+  }
+}
+
+
 .p-top-contact__textWrap {
   margin-top: rem(20);
   @include mq('md') {
