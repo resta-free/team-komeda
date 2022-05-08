@@ -1,5 +1,5 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-  const swiper__topWorks = new Swiper('.swiper__top-works', {
+  const swiper__topWorks = new Swiper('.js-topWorks-slider', {
     loop: true,
     // autoplay: {
     //   delay: 3000,
