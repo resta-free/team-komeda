@@ -2,10 +2,10 @@
 
 .p-overview__row {
   display: flex;
-  padding: rem(17) 0 rem(19) rem(5);
+  padding: rem(18) 0 rem(18) rem(5);
   border-bottom: 1px solid $white;
   @include mq('md') {
-  padding: rem(30) 0 rem(28);
+  padding: rem(30) 0 rem(27);
   }
 }
 
@@ -46,6 +46,9 @@
   content:"";
   display: block;
   padding-top: 80%;
+  @include mq('md') {
+    padding-top: 33.3636%;
+  }
 }
 
 .p-overview__map iframe {
