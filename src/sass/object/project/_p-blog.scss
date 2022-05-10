@@ -9,16 +9,16 @@
 }
 
 .p-blog__tab {
-  margin-top: rem(85);
+  margin-top: rem(80);
   @include mq('md') {
-    margin-top: rem(115);
+    margin-top: rem(110);
   }
 }
 
 .p-blog__cards {
-  margin-top: rem(37);
+  margin-top: rem(40);
   @include mq('md') {
-    margin-top: rem(40);
+    margin-top: rem(38);
   }
 }
 

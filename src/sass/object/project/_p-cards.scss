@@ -7,12 +7,16 @@
 
 .p-cards--col3 {
   margin-top: rem(-24);
+  @include mq('md') {
+    margin-top: rem(-48);
+  }
 }
 
 .p-cards--col3 > .p-card {
   margin-top: rem(24);
   width: 100%;
   @include mq('md') {
+    margin-top: rem(48);
     width: 31.8181%;
   }
 }
