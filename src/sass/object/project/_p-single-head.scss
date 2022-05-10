@@ -5,16 +5,6 @@
 }
 
 .p-single-head__inner {
-  margin: 0 auto;
-	max-width: rem(600);
-	width: 100%;
-	height: inherit;
-	padding-right: $padding-sp;
-	padding-left: $padding-sp;
-	@include mq(md) {
-		max-width: $l-inner + strip-unit($padding-pc) * 2;
-		padding: 0;
-	}
 }
 
 .p-single-head__heading {
