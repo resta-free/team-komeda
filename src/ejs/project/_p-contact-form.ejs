@@ -1,9 +1,9 @@
 <dl class="p-contact-form">
   <% let ary = [
-      { label:"会社名", type:"text", name:"company_name", placeholder:"テキストがはいります"},
-      { label:"部署名", type:"text", name:"department_name", placeholder:"テキストがはいります"}, 
-      { label:"お名前", type:"text", name:"your_name", placeholder:"テキストがはいります"}, 
-      { label:"ふりがな", type:"text", name:"your_kana", placeholder:"テキストがはいります"}
+      { label:"※会社名", type:"text", name:"company_name", placeholder:"テキストがはいります"},
+      { label:"※お名前", type:"text", name:"department_name", placeholder:"テキストがはいります"}, 
+      { label:"※ふりがな", type:"text", name:"your_name", placeholder:"テキストがはいります"}, 
+      { label:"※メールアドレス", type:"text", name:"your_kana", placeholder:"テキストがはいります"}
       ] %>
   <% ary.forEach(function (value) { %>
   <div class="p-contact-form__row">
@@ -17,7 +17,7 @@
   <% }); %>
   <div class="p-contact-form__row">
     <dt class="p-contact-form__head">
-      <p class="p-contact-form__heading">お問い合わせ内容</p>
+      <p class="p-contact-form__heading">※お問い合わせ内容</p>
     </dt>
     <dd class="p-contact-form__text">
       <textarea name="content_detail" placeholder="テキストがはいります"></textarea>

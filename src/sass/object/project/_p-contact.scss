@@ -150,3 +150,10 @@ outline: none;
   border: none;
   padding: 0;
 }
+
+.p-contact__footer {
+  margin-top: rem(120);
+  @include mq('md') {
+    margin-top: rem(150);
+  }
+}
