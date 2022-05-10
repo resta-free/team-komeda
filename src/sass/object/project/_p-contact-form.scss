@@ -66,6 +66,9 @@
   width: 100%;
   color: #333;
   background-color: $white;
+  @include mq('md') {
+    padding: rem(5) rem(14);
+  }
 }
 
 .p-contact-form__text input:focus {
@@ -97,6 +100,10 @@
   overflow-y: scroll;
   color: #333;
   background-color: $white;
+  @include mq('md') {
+    height: rem(300);
+    padding: rem(8) rem(14);
+  }
 }
 
 .p-contact-form__text textarea:focus {
@@ -110,9 +117,9 @@ outline: none;
 }
 
 .p-contact-form__button-wrap {
-  margin-top: rem(48);
+  margin-top: rem(41);
   @include mq('md') {
-    margin-top: rem(56);
+    margin-top: rem(50);
     padding-right: rem(90);
   }
 }

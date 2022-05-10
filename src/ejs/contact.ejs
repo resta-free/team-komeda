@@ -8,7 +8,7 @@
     <%- include('./project/_p-lower-mv',{page:'contact',pageTitle:'お問い合わせ',alt:'お問い合わせ'}) %>
   </div>
   <div class="l-breadcrumbs">
-    <%- include('./component/_c-breadcrumbs.ejs',{pageTitle1:'トップ', pageTitle2:'お問い合わせ'}) %>
+    <%- include('./component/_c-breadcrumbs.ejs',{pageTitle1:'お問い合わせ', pageTitle2:''}) %>
   </div>
   <div class="l-contact p-contact">
     <div class="p-contact__inner l-inner">
@@ -16,9 +16,10 @@
         <%- include('./project/_p-contact-form') %>
       </div>
     </div>
-  </div>
-  <%- include('./component/_c-to-top') %>
-  <%- include('./common/_p-footer') %>
+    <div class="p-contact__footer">
+      <%- include('./component/_c-to-top') %>
+      <%- include('./common/_p-footer') %>
+    </div>
 </body>
 
 </html>
