@@ -1,6 +1,10 @@
 @use 'global' as *;
 
 .l-404 {
-  padding-top: rem(130);
-  padding-bottom: rem(150);
+  padding-top: rem(118);
+  padding-bottom: 0;
+  @include mq('md') {
+    padding-top: rem(174);
+    padding-bottom: rem(147);
+  }
 }
