@@ -32,11 +32,11 @@
 }
 
 .p-works__pagination {
-  margin-top: rem(80);
+  margin-top: rem(87);
   padding-right: $padding-sp;
 	padding-left: $padding-sp;
   @include mq('md') {
-    margin-top: rem(104);
+    margin-top: rem(108);
     padding: 0;
   }
 }

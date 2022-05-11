@@ -16,7 +16,7 @@
 }
 
 .p-works-cards > .p-works-card:not(:first-child) {
-  margin-top: rem(46);
+  margin-top: rem(53);
   @include mq('md') {
     margin-top: 0;
   }
