@@ -116,15 +116,7 @@ outline: none;
   color: #979797;
 }
 
-.p-contact-form__button-wrap {
-  margin-top: rem(41);
-  @include mq('md') {
-    margin-top: rem(50);
-    padding-right: rem(90);
-  }
-}
-
-.p-contact-form__button-wrap button {
+.p-contact-form__button {
   -webkit-appearance: none;
   background-color: $white;
   background-image: none;
@@ -135,7 +127,7 @@ outline: none;
   display: inline-block;
   font-size: rem(20);
   letter-spacing: 0.1em;
-  margin: 0 0 0 auto;
+  margin: rem(41) 0 0 auto;
   padding: 0;
   text-decoration: none;
   display: flex;
@@ -148,15 +140,16 @@ outline: none;
     letter-spacing: 0.125em;
     max-width: rem(360);
     height: rem(60);
+    margin: rem(50) rem(90) 0 auto;
   }
 }
 
-.p-contact-form__button-wrap button:hover,
-.p-contact-form__button-wrap button:focus {
+.p-contact-form__button:hover,
+.p-contact-form__button:focus {
   outline: none;
 }
 
-.p-contact-form__button-wrap button::-moz-foucus-inner {
+.p-contact-form__button::-moz-foucus-inner {
   border: none;
   padding: 0;
 }

@@ -1,4 +1,4 @@
-<dl class="p-contact-form">
+<form class="p-contact-form">
   <% let ary = [
       { label:"※会社名", type:"text", name:"company_name", placeholder:"テキストがはいります"},
       { label:"※お名前", type:"text", name:"department_name", placeholder:"テキストがはいります"}, 
@@ -7,23 +7,21 @@
       ] %>
   <% ary.forEach(function (value) { %>
   <div class="p-contact-form__row">
-    <dt class="p-contact-form__head">
+    <div class="p-contact-form__head">
       <p class="p-contact-form__heading"><%= value.label %></p>
-    </dt>
-    <dd class="p-contact-form__text">
+    </div>
+    <div class="p-contact-form__text">
       <input type="<%= value.type %>" name="<%= value.name %>" placeholder="<%= value.placeholder %>">
-    </dd>
+    </div>
   </div>
   <% }); %>
   <div class="p-contact-form__row">
-    <dt class="p-contact-form__head">
+    <div class="p-contact-form__head">
       <p class="p-contact-form__heading">※お問い合わせ内容</p>
-    </dt>
-    <dd class="p-contact-form__text">
+    </div>
+    <div class="p-contact-form__text">
       <textarea name="content_detail" placeholder="テキストがはいります"></textarea>
-    </dd>
+    </div>
   </div>
-  <div class="p-contact-form__button-wrap">
-    <button type="submit" name="submit" value="send" class="button01">送信</button>
-  </div>
-</dl>
+  <button type="submit" name="submit" value="send" class="button01 p-contact-form__button">送信</button>
+</form>
