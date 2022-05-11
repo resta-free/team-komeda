@@ -52,7 +52,6 @@
 
 .p-footer__nav-link {
   display: block;
-  position: relative;
   font-size: rem(16);
   color: $white;
   letter-spacing: rem(1.2);
@@ -66,7 +65,11 @@
   }
 }
 
-.p-footer__nav-link::after {
+.p-footer__nav-link span {
+  position: relative;
+}
+
+.p-footer__nav-link span::after {
   position: absolute;
   top: 30px;
   left: 0;
@@ -79,12 +82,12 @@
   transition: transform .3s;
 }
 
-.p-footer__nav-link:hover {
+.p-footer__nav-link span:hover {
   transition: transform .3s;
   opacity: 1;
 }
 
-.p-footer__nav-link:hover::after {
+.p-footer__nav-link span:hover::after {
   transform: scale(1, 1);
 }
 
