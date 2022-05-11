@@ -26,11 +26,12 @@
   text-align: center;
   @include mq('md') {
     font-size: rem(30);
+    margin-top: rem(71);
   }
 }
 
 .p-thanks__button {
-  margin-top: rem(80);
+  margin-top: rem(76);
   text-align: center;
   @include mq('md') {
 

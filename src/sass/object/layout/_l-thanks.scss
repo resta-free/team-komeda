@@ -2,5 +2,9 @@
 
 .l-thanks {
   padding-top: rem(130);
-  padding-bottom: rem(150);
+  padding-bottom: rem(116);
+  @include mq('md') {
+    padding-top: rem(195);
+    padding-bottom: rem(145);
+  }
 }
