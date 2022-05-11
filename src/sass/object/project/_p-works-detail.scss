@@ -15,7 +15,11 @@
 }
 
 .p-works-detail__single-head {
-
+  margin: 0 auto;
+	width: 100%;
+  max-width: rem(540);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
 }
 
 // .p-works-detail__gallery
@@ -23,7 +27,6 @@
 .p-works-detail__gallery {
   margin-top: rem(16);
   width: 100%;
-  max-width: rem(600);
   margin-left: auto;
   margin-right: auto;
   @include mq('md') {
@@ -46,7 +49,6 @@
   overflow: hidden;
   @include mq('md') {
     padding-top: 53.375%;
-   
   }
 }
 
@@ -73,7 +75,6 @@
   padding-top: 43.467%;
   overflow: hidden;
   opacity: .5;
-  max-width: rem(163);
   width: 100%;
   @include mq('md') {
     padding-top: 11.625%;
@@ -132,7 +133,6 @@
     border-left: 3px solid $yellow2;
     width: 20px;
     height: 20px;
-
   }
 }
 
@@ -175,6 +175,9 @@
 
 .p-works-detail__comment {
   margin-top: rem(32);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(540);
 	padding-right: $padding-sp;
 	padding-left: $padding-sp;
   @include mq('md') {
