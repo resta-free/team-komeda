@@ -35,9 +35,11 @@
 }
 
 .p-pagination-single__link:hover {
-  color: $gray;
-  background-color: $white;
-  transition: all 0.3s ease 0s;
-  opacity: 1;
+  @include mq('md') {
+    color: $gray;
+    background-color: $white;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+  }
 }
 

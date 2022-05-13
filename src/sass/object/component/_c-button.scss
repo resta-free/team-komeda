@@ -5,11 +5,11 @@
   display: inline-block;
   text-align: center;
   font-size: rem(20);
-  position: relative;
-  transition: ease .3s;
-  overflow: hidden;
-  z-index: 1;
   @include mq('md') {
+    position: relative;
+    transition: ease .3s;
+    overflow: hidden;
+    z-index: 1;
     font-size: rem(16);
   }
 }
@@ -19,22 +19,26 @@
 }
 
 .c-button::before {
-  display: block;
-  content:"";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform-origin: right top;
-  transform: scale(0, 1);
-  transition: transform .3s;
-  z-index: -1;
+  @include mq('md') {
+    display: block;
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+    z-index: -1;
+  }
 }
 
 .c-button:hover::before {
-  transform-origin: left top;
-  transform: scale(1, 1);
+  @include mq('md') {
+    transform-origin: left top;
+    transform: scale(1, 1);
+  }
 }
 
 //背景が黒のボタン
@@ -53,7 +57,9 @@
 }
 
 .c-button--background-black:hover {
-  color: $gray;
+  @include mq('md') {
+    color: $gray;
+  }
 }
 
 .c-button--background-black::before {
@@ -79,7 +85,6 @@
 }
 
 .c-button--background-white:hover {
-  color: $gray;
   @include mq('md') {
     color: $white;
     border: 1px solid $gray;
@@ -87,7 +92,6 @@
 }
 
 .c-button--background-white::before {
-  background-color: $white;
   @include mq('md') {
     background-color: $gray;
   }

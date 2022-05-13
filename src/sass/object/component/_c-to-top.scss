@@ -19,7 +19,16 @@
 }
 
 .c-to-top:hover {
-  background-color: $gray;
+  @include mq('md') {
+    background-color: $gray;
+  }
+}
+
+.c-to-top:hover .c-to-top__arrow {
+  @include mq('md') {
+    border-top: rem(2) solid $white;
+    border-left: rem(2) solid $white;
+  }
 }
 
 .c-to-top__arrow {
@@ -32,9 +41,4 @@
   transform: rotate(45deg);
   margin-top: rem(10);
   transition: ease .3s;
-}
-
-.c-to-top__arrow:hover {
-  border-top: rem(2) solid $white;
-  border-left: rem(2) solid $white;
 }
