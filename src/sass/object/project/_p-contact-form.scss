@@ -10,7 +10,7 @@
 .p-contact-form__row {
   @include mq('md') {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
   }
 }
@@ -25,6 +25,7 @@
 .p-contact-form__head {
   @include mq('md') {
     text-align: right;
+    margin-top: rem(8);
   }
 }
 
@@ -153,3 +154,4 @@ outline: none;
   border: none;
   padding: 0;
 }
+
