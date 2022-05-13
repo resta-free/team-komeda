@@ -46,6 +46,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  $(window).resize(function () {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      $('.js-drawer-menu').fadeOut();
+    }
+  });
+
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
