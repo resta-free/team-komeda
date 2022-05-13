@@ -19,6 +19,7 @@
   text-align: center;
   height: rem(24);
   width: rem(24);
+  transition: ease .3s;
 }
 
 .p-pagination a.pager:nth-child(2) {
@@ -44,6 +45,7 @@
   height: rem(24);
   width: rem(71);
   text-transform: uppercase;
+  transition: ease .3s;
 }
 
 .p-pagination a.next {
@@ -51,7 +53,14 @@
 }
 
 /* ホバー時 & 現在のページ */
-.p-pagination a:hover,
+.p-pagination a:hover {
+  @include mq('md') {
+    color: $black;
+    background-color: $white;
+    opacity: 1;
+  }
+}
+
 .p-pagination a.current {
   color: $black;
   background-color: $white;

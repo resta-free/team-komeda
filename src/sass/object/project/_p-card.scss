@@ -10,9 +10,11 @@
 }
 
 .p-card:hover {
-  background-color: $gray;
-  color: $white;
-  opacity: 1;
+  @include mq('md') {
+    background-color: $gray;
+    color: $white;
+    opacity: 1;
+  }
 }
 
 .p-card__new-label {

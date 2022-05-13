@@ -72,29 +72,37 @@
 }
 
 .p-footer__nav-link span {
-  position: relative;
+  @include mq('md') {
+    position: relative;
+  }
 }
 
 .p-footer__nav-link span::after {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: $yellow;
-  transform: scale(0, 1);
-  transform-origin: center top;
-  transition: transform .3s;
+  @include mq('md') {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: $yellow;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+  }
 }
 
 .p-footer__nav-link span:hover {
-  transition: transform .3s;
-  opacity: 1;
+  @include mq('md') {
+    transition: transform .3s;
+    opacity: 1;
+  }
 }
 
 .p-footer__nav-link span:hover::after {
-  transform: scale(1, 1);
+  @include mq('md') {
+    transform: scale(1, 1);
+  }
 }
 
 .footer__copyright {
