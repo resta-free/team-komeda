@@ -65,6 +65,12 @@
   }
 }
 
+.p-footer__nav-link:hover {
+  @include mq('md') {
+    opacity: unset;
+  }
+}
+
 .p-footer__nav-link span {
   position: relative;
 }
