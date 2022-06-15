@@ -9,6 +9,11 @@
   }
 }
 
+.p-header.headerColorScroll {
+  background-color: rgba( 17, 17, 17, 1);
+  transition: color 0.4s ease-out;
+}
+
 .p-header__inner {
   display: flex;
   justify-content: space-between;
@@ -28,11 +33,14 @@
   }
 }
 
-.p-header__nav {
+.p-header__hamburger {
+  margin-left: auto;
+}
+
+.p-header__sp-nav {
   height: inherit;
 }
 
-.p-header.headerColorScroll {
-  background-color: rgba( 17, 17, 17, 1);
-  transition: color 0.4s ease-out;
+.p-header__pc-nav {
+  height: inherit;
 }

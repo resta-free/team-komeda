@@ -1,12 +1,16 @@
-<div class="l-header p-header js-header">
+<header class="l-header p-header js-header">
   <div class="p-header__inner">
     <a href="/" class="p-header__logo">
-      <%- include('../component/_c-logo.ejs') %>
+      <%- include('../component/_c-logo') %>
     </a>
-    <div class="p-header__nav">
-      <%- include('../component/_c-hamburger.ejs') %>
-      <%- include('../project/_p-sp-nav.ejs') %>
-      <%- include('../project/_p-pc-nav.ejs') %>
+    <div class="p-header__hamburger">
+      <%- include('../component/_c-hamburger') %>
+    </div>
+    <div class="p-header__sp-nav">
+      <%- include('../project/_p-sp-nav') %>
+    </div>
+    <div class="p-header__pc-nav">
+      <%- include('../project/_p-pc-nav') %>
     </div>
   </div>
-</div>
+</header>

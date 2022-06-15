@@ -3,32 +3,32 @@
 <%- include('./common/_head',{pageTitle:'CodeUpsチーム開発:事業内容'}) %>
 
 <body>
-  <header class="l-header">
-    <%- include('./common/_p-header') %>
-  </header>
-  <div class="l-mv">
-    <%- include('./project/_p-top-mv') %>
-  </div>
-  <div class="l-top-news">
-    <%- include('./project/_p-top-news') %>
-  </div>
-  <section class="l-top-content">
-    <%- include('./project/_p-top-content') %>
-  </section>
-  <section class="l-top-works">
-    <%- include('./project/_p-top-works') %>
-  </section>
-  <section class="l-top-overview">
-    <%- include('./project/_p-top-overview') %>
-  </section>
-  <section class="l-top-blog">
-    <%- include('./project/_p-top-blog') %>
-  </section>
-  <section class="l-top-contact">
-    <%- include('./project/_p-top-contact',{modifier:''}) %>
-  </section>
+  <%- include('./common/_p-header') %>
+  <main>
+    <section class="l-mv">
+      <%- include('./project/_p-top-mv') %>
+    </section>
+    <section class="l-top-news">
+      <%- include('./project/_p-top-news') %>
+    </section>
+    <section class="l-top-content">
+      <%- include('./project/_p-top-content') %>
+    </section>
+    <section class="l-top-works">
+      <%- include('./project/_p-top-works') %>
+    </section>
+    <section class="l-top-overview">
+      <%- include('./project/_p-top-overview') %>
+    </section>
+    <section class="l-top-blog">
+      <%- include('./project/_p-top-blog') %>
+    </section>
+    <section class="l-top-contact">
+      <%- include('./project/_p-top-contact',{modifier:''}) %>
+    </section>
+    <%- include('./component/_c-to-top') %>
+  </main>
   <%- include('./common/_p-footer') %>
-  <%- include('./component/_c-to-top') %>
 </body>
 
 </html>

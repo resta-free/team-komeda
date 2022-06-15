@@ -4,19 +4,21 @@
 
 <body>
   <%- include('./common/_p-header') %>
-  <div class="l-lower-mv">
-    <%- include('./project/_p-lower-mv',{page:'overview',pageTitle:'企業概要',alt:'企業概要'}) %>
-  </div>
-  <div class="l-breadcrumbs">
-    <%- include('./component/_c-breadcrumbs',{pageTitle1:'企業概要', pageTitle2:''}) %>
-  </div>
-  <main class="l-overview">
-    <%- include('./project/_p-overview') %>
-    <section class="l-top-contact">
-      <%- include('./project/_p-top-contact', {modifier:'p-top-contact__header--lower'}) %>
+  <main>
+    <section class="l-lower-mv">
+      <%- include('./project/_p-lower-mv',{page:'overview',pageTitle:'企業概要',alt:'企業概要'}) %>
     </section>
+    <div class="l-breadcrumbs">
+      <%- include('./component/_c-breadcrumbs',{pageTitle1:'企業概要', pageTitle2:''}) %>
+    </div>
+    <div class="l-overview">
+      <%- include('./project/_p-overview') %>
+      <section class="l-top-contact">
+        <%- include('./project/_p-top-contact', {modifier:'p-top-contact__header--lower'}) %>
+      </section>
+      <%- include('./component/_c-to-top') %>
+    </div>
   </main>
-  <%- include('./component/_c-to-top') %>
   <%- include('./common/_p-footer') %>
 </body>
 

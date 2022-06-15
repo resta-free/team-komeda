@@ -4,19 +4,21 @@
 
 <body>
   <%- include('./common/_p-header') %>
-  <div class="l-lower-mv">
-    <%- include('./project/_p-lower-mv',{page:'blog',pageTitle:'ブログ',alt:'ブログ'}) %>
-  </div>
-  <div class="l-breadcrumbs">
-    <%- include('./component/_c-breadcrumbs',{pageTitle1:'ブログ記事一覧', pageTitle2:''}) %>
-  </div>
-  <main class="l-blog">
-    <%- include('./project/_p-blog') %>
-    <section class="l-top-contact">
-      <%- include('./project/_p-top-contact', {modifier:'p-top-contact__header--lower'}) %>
+  <main>
+    <section class="l-lower-mv">
+      <%- include('./project/_p-lower-mv',{page:'blog',pageTitle:'ブログ',alt:'ブログ'}) %>
     </section>
+    <div class="l-breadcrumbs">
+      <%- include('./component/_c-breadcrumbs',{pageTitle1:'ブログ記事一覧', pageTitle2:''}) %>
+    </div>
+    <div class="l-blog">
+      <%- include('./project/_p-blog') %>
+      <section class="l-top-contact">
+        <%- include('./project/_p-top-contact', {modifier:'p-top-contact__header--lower'}) %>
+      </section>
+    </div>
+    <%- include('./component/_c-to-top') %>
   </main>
-  <%- include('./component/_c-to-top') %>
   <%- include('./common/_p-footer') %>
 </body>
 
